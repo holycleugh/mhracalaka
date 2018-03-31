@@ -1,0 +1,62 @@
+@font-face {
+  font-family: charter;
+  src: url(../media/charter.ttf);
+}
+
+@font-face {
+  font-family: charter;
+  src: url(../media/charter-bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: charter;
+  src: url(../media/charter-italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: gentium;
+  src: url(../media/gentium.ttf);
+}
+
+@font-face {
+  font-family: gentium;
+  src: url(../media/gentium-italic.ttf);
+  font-style: italic;
+}
+
+body {
+  max-width: 65ch;
+  margin: 50px;
+  background: #fafafa;
+  font-family: gentium;
+  color: #222;
+  line-height: 125%;
+}
+
+a {
+  color: #4b4;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.box {
+  width: 87.5%;
+  padding: 15px;
+  border: 1px #aaa solid;
+  background: #efefef;
+  font-size: 87.5%;
+}
+
+.box p:first-child {
+  margin-top: 0;
+}
+
+.box p:last-child {
+  margin-bottom: 0;
+}
