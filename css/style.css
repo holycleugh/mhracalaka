@@ -27,22 +27,51 @@
 }
 
 body {
-  max-width: 65ch;
+  width: 56ch;
   margin: 50px;
   background: #fafafa;
-  font-family: gentium;
+  font: 18px gentium;
   color: #222;
-  line-height: 125%;
+  line-height: 112.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
 }
 
 a {
   color: #4b4;
-  font-weight: bold;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0.25em 1em;
+  padding: 0;
+  font-size: 81.25%;
+}
+
+li::before {
+  content: "\00b7";
+  position: relative;
+  font-size: 32px;
+  top: 6px;
+  margin-right: 0.25em;
+  line-height: 0;
+}
+
+#foot {
+  margin-top: 4em;
+  font-size: 75%;
+}
+
+.block {
+  margin: 1em 0;
 }
 
 .box {
@@ -51,6 +80,7 @@ a:hover {
   border: 1px #aaa solid;
   background: #efefef;
   font-size: 87.5%;
+  margin-left: 0.5em;
 }
 
 .box p:first-child {
@@ -59,4 +89,13 @@ a:hover {
 
 .box p:last-child {
   margin-bottom: 0;
+}
+
+.ct {
+  font-variant: small-caps;
+  text-decoration: underline;
+}
+
+.thin {
+  word-spacing: -0.125em;
 }
