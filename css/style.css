@@ -26,11 +26,17 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: everson;
+  src: url(../media/everson-bold.ttf);
+}
+
 body {
-  width: 56ch;
+  max-width: 72ch;
   margin: 50px;
+  margin-bottom: 125px;
   background: #fafafa;
-  font: 18px gentium;
+  font: 16px gentium;
   color: #222;
   line-height: 112.5%;
 }
@@ -49,9 +55,49 @@ a:hover {
   text-decoration: underline;
 }
 
+pre {
+  padding: 0;
+  font-family: everson;
+  font-size: 75%;
+  white-space: pre;
+  line-height: 75%;
+}
+
+small {
+  font-size: 87.5%;
+}
+
+dl {
+  font-size: 81.25%;
+  padding: 0.0625em;
+}
+
+dt, dd {
+  float: left;
+  margin: 0;
+}
+
+dt {
+  width: 9.375%;
+  font-family: everson;
+  margin-top: 0.15625em;
+  margin-left: 0.78125%;
+}
+
+dd {
+  width: 89.84375%;
+  padding-bottom: 0.1875em;
+}
+
+dd::before {
+  content: ":";
+  margin-left: 0.1875em;
+  margin-right: 0.5em;
+}
+
 ul {
   list-style-type: none;
-  margin: 0.25em 1em;
+  margin: 0.25em 0.75em;
   padding: 0;
   font-size: 81.25%;
 }
@@ -61,7 +107,7 @@ li::before {
   position: relative;
   font-size: 32px;
   top: 6px;
-  margin-right: 0.25em;
+  margin-right: 0.125em;
   line-height: 0;
 }
 
@@ -94,6 +140,13 @@ li::before {
 .ct {
   font-variant: small-caps;
   text-decoration: underline;
+}
+
+.date {
+  display: inline-block;
+  min-width: 7ch; /* You foul devil, you! */
+  font-size: 87.5%;
+  text-align: right;
 }
 
 .thin {
