@@ -57,10 +57,18 @@ a:hover {
 
 pre {
   padding: 0;
+  margin: -12px 0;
+  padding: 12px 0;
   font-family: everson;
   font-size: 75%;
   white-space: pre;
   line-height: 75%;
+  border-left: 1px solid black;
+}
+
+pre:first-of-type, pre:last-of-type {
+  margin: 12px 0;
+  padding: 0;
 }
 
 small {
