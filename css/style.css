@@ -81,19 +81,18 @@ dl {
 }
 
 dt, dd {
-  float: left;
   margin: 0;
 }
 
 dt {
-  width: 9.375%;
+  float: left;
+  min-width: 3em;
   font-family: everson;
   margin-top: 0.15625em;
-  margin-left: 0.78125%;
+  margin-left: 0.15625em;
 }
 
 dd {
-  width: 89.84375%;
   padding-bottom: 0.1875em;
 }
 
