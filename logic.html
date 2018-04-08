@@ -10,9 +10,10 @@
       MathJax.Hub.Config({
         TeX: {
           extensions: ["AMSmath.js", "AMSsymbols.js"],
-//        Macros: {
-//          RR: "{\\bf R}"
-//        }
+          Macros: {
+            nec:  "{\\square}",
+            poss: "{\\lozenge}"
+          }
         },
         extensions: ["tex2jax.js"],
         jax: ["input/TeX", "output/HTML-CSS"],
@@ -167,9 +168,10 @@
         <dt>&#x3008;&#8868;,&#8869;&#x3009;</dt><dd>Tautology and contradiction.</dd>
         <dt>&#x3008;&rarr;,&not;&#x3009;</dt><dd>Implication and negation.</dd>
         <dt>&#x3008; &forall; &#x3009;</dt><dd>Everything.</dd>
-        <dt>&#x3008; &#9723; &#x3009;</dt><dd>Necessity.</dd>
-        <dt>&#x3008;K,B&#x3009;</dt><dd>Knowledge and belief.</dd>
-        <dt>&#x3008; J &#x3009;</dt><dd>Jedi foreknowledge.</dd>
+        <dt>&#x3008; &#9723; &#x3009;</dt><dd>Humility, or necessity.</dd>
+<!--    <dt>&#x3008; &#9723; &#x3009;</dt><dd>Necessity.</dd>-->
+<!--    <dt>&#x3008;K,B&#x3009;</dt><dd>Knowledge and belief.</dd>-->
+<!--    <dt>&#x3008; J &#x3009;</dt><dd>Jedi foreknowledge.</dd>-->
 <!--    <dt>&#x3008;&#9801;,&#9906;&#x3009;</dt><dd>Jedi foreknowing and Jedi forefeeling.</dd>-->
       </dl>
       <p>
@@ -177,7 +179,7 @@
       </p>
       <dl>
         <dt>&#x3008;&equiv;,&and;,&or;,&oplus;&#x3009;</dt><dd>We are, we join, we cleave, and we destroy.</dd>
-        <dt>&#x3008;&exist;,&#9671;,P,C&#x3009;</dt><dd>We choose, we stand, we see, and we create.</dd>
+        <dt>&#x3008; &exist; , &#9671; &#x3009;</dt><dd>We choose, and we blind ourselves.</dd>
       </dl>
       <p>
       And we use the semantics of Jaakko Hintikka. With these tools we shall prove <span class = "ct">all the knowledge in the world</span>.
@@ -186,12 +188,17 @@
     <hr />
     <div class = "block">
       <p>
-      Everything is axiomatised. Observe that, if we take as axiom that the Jedi <em>do</em> know everything, then our system is trivial.
+      The upper bound.
       </p>
       <ul>
-        <li>If it is possible that $p$, then the Jedi know that it is possible that $p$. $\lozenge p \to J(p)$.</li>
-        <li></li>
+        <li><strong>K.</strong> Through humility, the implication is actualised. $\nec (p \to q) \to (\nec p \to \nec q)$.</li>
+        <li><strong>T.</strong> The <em>lam&amacr;dhi</em> of awareness becomes true. $\nec p \to p$.</li>
+        <li><strong>&#272;.</strong> We are aware of our folly. $\poss p \to \nec p$.</li>
+        <li><strong>4.</strong> Humility begets humility. $\nec p \to \nec \nec p$.</li>
       </ul>
+      <p>
+      Behold, we cannot declare &ldquo;<strong>B.</strong> Existence of the maverick. $p \to \nec \poss p$&rdquo;, or we shall be forced to declare &ldquo;<strong>5.</strong> Ultimate conquest. $\poss p \to \nec \poss p$&rdquo;. Then, everything is trivial, nothing is meaningful, we are beset with <span class = "ct">fearfulness and trembling</span>, and we are overwhelmed with horror.
+      </p>
     </div>
   </body>
 </html>
