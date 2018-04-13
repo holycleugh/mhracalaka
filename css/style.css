@@ -1,18 +1,11 @@
 @font-face {
-  font-family: charter;
-  src: url(../media/charter.ttf);
+  font-family: charis;
+  src: url(../media/charis.ttf);
 }
 
 @font-face {
-  font-family: charter;
-  src: url(../media/charter-bold.ttf);
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: charter;
-  src: url(../media/charter-italic.ttf);
-  font-style: italic;
+  font-family: everson;
+  src: url(../media/everson-bold.ttf);
 }
 
 @font-face {
@@ -24,11 +17,6 @@
   font-family: gentium;
   src: url(../media/gentium-italic.ttf);
   font-style: italic;
-}
-
-@font-face {
-  font-family: everson;
-  src: url(../media/everson-bold.ttf);
 }
 
 body {
@@ -66,6 +54,22 @@ pre {
 
 small {
   font-size: 87.5%;
+}
+
+table {
+  display: inline-block;
+  vertical-align: middle;
+  border-collapse: collapse;
+  margin: 2px;
+  color: #333;
+}
+
+th, td {
+  min-width: 32px;
+  height: 1.50em;
+  padding: 0.25em;
+  border: 1px solid black;
+  text-align: center;
 }
 
 dl {
@@ -137,6 +141,11 @@ li::before {
   margin-bottom: 0;
 }
 
+.big td {
+  min-width: 64px;
+  height: 2.25em;
+}
+
 .ct {
   font-variant: small-caps;
   text-decoration: underline;
@@ -152,6 +161,29 @@ li::before {
 .hanging {
   padding-left: 1em;
   text-indent: -1em;
+}
+
+.ships th, .ships td {
+  height: 1.00em;
+  padding: 0.25em;
+}
+
+.ships td:first-child {
+  font-weight: bold;
+}
+
+.ships td:nth-child(2) {
+  font-style: italic;
+}
+
+.ships td:last-child {
+  font: 24px everson;
+  padding: 2px;
+  line-height: 0;
+}
+
+.sullow {
+  font-family: charis;
 }
 
 .thin {
