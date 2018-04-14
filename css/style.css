@@ -146,6 +146,15 @@ li::before {
   height: 2.25em;
 }
 
+.khoa {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.compact td {
+  padding: 0;
+}
+
 .ct {
   font-variant: small-caps;
   text-decoration: underline;
@@ -161,6 +170,10 @@ li::before {
 .hanging {
   padding-left: 1em;
   text-indent: -1em;
+}
+
+.orth {
+  font-style: italic;
 }
 
 .ships th, .ships td {
