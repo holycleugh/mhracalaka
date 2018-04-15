@@ -176,6 +176,87 @@ li::before {
   font-style: italic;
 }
 
+table.ot {
+  background: #fcfcfc;
+  border: 2px groove grey;
+}
+
+table.ot td {
+  padding: 0;
+  padding-left: 0.5em;
+  font-family: everson;
+  text-align: left;
+}
+
+table.ot tr:not(:nth-child(1)) th {
+  font-size: 0.875em;
+  font-weight: normal;
+  text-align: right;
+  padding-right: 8px;
+}
+
+table.ot th.candidate::before {
+  font-size: 24px;
+  content: "\261e  ";
+  line-height: 0;
+  vertical-align: sub;
+  padding-right: 0.1875em;
+}
+
+table.ot tr:nth-child(1) th {
+  width: 6em;
+  padding: 0 0.5em;
+  font-size: 0.875em;
+  text-align: left;
+  font-variant: small-caps;
+  border-bottom: 2px solid black;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1) {
+  font-weight: normal;
+  text-align: center;
+  font-family: charis;
+  font-variant: normal;
+  font-size: 18px;
+}
+
+table.ot tr:not(:nth-child(1)) th:nth-child(1) {
+  border-right: none;
+}
+
+table.ot tr:not(:nth-child(1)) th:nth-child(2) {
+  border-left: none;
+}
+
+table.ot tr:not(:nth-child(1)) th:nth-child(2), table.ot tr:nth-child(1) th:nth-child(1) {
+  border-right: 4px double black;
+  font-family: charis;
+}
+
+table.ot th em {
+  color: grey;
+  font-size: 92.5%;
+}
+
+table.pset {
+  text-align: left;
+  width: 40em;
+}
+
+table.pset td {
+  text-align: left;
+  width: 15em;
+  border: none;
+}
+
+.sc {
+  font-variant: small-caps;
+}
+
+strong.sc {
+  line-height: 137.5%;
+}
+
 .ships th, .ships td {
   height: 1.00em;
   padding: 0.25em;
@@ -199,6 +280,23 @@ li::before {
   font-family: charis;
 }
 
+.tam td {
+  padding: 0.0625em 0.25em;
+}
+
+.tam td:nth-child(1), .tam td:nth-child(3) {
+  text-align: left;
+  font-variant: small-caps;
+}
+
+.tam td:nth-child(2), .tam td:nth-child(4) {
+  font-family: everson;
+}
+
 .thin {
   word-spacing: -0.125em;
+}
+
+.ot-001 tr:nth-child(1) th:nth-child(2), .ot-001 tr td:nth-child(3) {
+  border-right: 1px solid #aaa;
 }
