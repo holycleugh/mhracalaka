@@ -6,41 +6,12 @@
     <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
     <link rel = "shortcut icon" href = "media/favicon.png" />
     <title>mhracalaka</title>
-    <script type = "text/javascript">
-    digits = ["naught", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
-    ordinals = ["naughth", "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth"];
-    months = ["afteryule", "cake", "retha", "easter", "threemilk", "midsummer", "afterlitha", "grass", "harvest", "winter", "blood", "yuletide"];
-
-    function tonight() {
-      date = document.getElementById("date");
-      today = new Date();
-      date.innerHTML = datify(today.getDate()) + " of " + monthify(today.getMonth());
-    }
-
-    function datify(d) {
-      if (d < 10) return ordinals[d % 10];
-      else if (d == 10) {
-        return "tenth";
-      } else if (d < 20) {
-        return "onety-" + ordinals[d % 10];
-      } else if (d == 20) {
-        return "twentieth";
-      } else {
-        return "twenty-" + ordinals[d % 10];
-      }
-    }
-
-    function monthify(m) {
-      return months[m];
-    }
-    </script>
   </head>
   <body>
     <div class = "block">
-      <h3><a href = "index.html"><em>mhracalaka.</em></a>
+      <h3><a href = "index.html"><em>mhracalaka.</em></a></h3>
       <p>
-      To-night is the <span id = "date">to-night</span>.
-      <script type = "text/javascript">tonight();</script>
+      Tonight is <span id = "date">tonight</span>.
       </p>
     </div>
 
@@ -57,6 +28,7 @@
       <p>
       Mirad, the <a href="https://eff.org">Electronic Frontier Foundation</a> fights for your rights in the digital world.
       </p>
+      <script type = "text/javascript" src = "js/date.js"></script>
     </div>
   </body>
 </html>
