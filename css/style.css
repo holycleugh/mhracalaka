@@ -155,6 +155,26 @@ li::before {
   padding: 0;
 }
 
+dl.constraints dt {
+  font-family: gentium;
+  font-weight: bold;
+  font-variant: small-caps;
+  width: 12.5%;
+}
+
+dl.constraints dd {
+  width: 87.5%;
+}
+
+dl.constraints dt, dl.constraints dt {
+  display: block;
+  float: left;
+}
+
+dl.constraints dd::before {
+  content: "";
+}
+
 .ct {
   font-variant: small-caps;
   text-decoration: underline;
@@ -204,7 +224,7 @@ table.ot th.candidate::before {
 }
 
 table.ot tr:nth-child(1) th {
-  width: 6em;
+  width: 5em;
   padding: 0 0.5em;
   font-size: 0.875em;
   text-align: left;
@@ -213,11 +233,38 @@ table.ot tr:nth-child(1) th {
 }
 
 table.ot tr:nth-child(1) th:nth-child(1) {
+  width: 6em;
   font-weight: normal;
   text-align: center;
   font-family: charis;
   font-variant: normal;
   font-size: 18px;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1) em {
+  font-style: normal;
+  display: inline;
+  color: black;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1) strong {
+  font-weight: normal;
+  font-size: 0.875em;
+  display: none;
+  color: grey;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1) strong::before, table.ot tr:nth-child(1) th:nth-child(1) strong::after {
+  content: "\2014";
+  padding: 0 0.25em;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1):hover em {
+  display: none;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1):hover strong {
+  display: inline;
 }
 
 table.ot tr:not(:nth-child(1)) th:nth-child(1) {
@@ -226,6 +273,10 @@ table.ot tr:not(:nth-child(1)) th:nth-child(1) {
 
 table.ot tr:not(:nth-child(1)) th:nth-child(2) {
   border-left: none;
+}
+
+table.ot tr:not(:nth-child(1)) th:not(:nth-child(1)):not(:nth-child(2)) {
+  background: lightgrey;
 }
 
 table.ot tr:not(:nth-child(1)) th:nth-child(2), table.ot tr:nth-child(1) th:nth-child(1) {
@@ -297,6 +348,15 @@ strong.sc {
   word-spacing: -0.125em;
 }
 
+.phones-rgh th {
+  font-size: 0.75em;
+}
+
 .ot-001 tr:nth-child(1) th:nth-child(2), .ot-001 tr td:nth-child(3) {
+  border-right: 1px solid #aaa;
+}
+
+.ot-0011 tr:nth-child(1) th:nth-child(2), .ot-0011 tr td:nth-child(3), .ot-0011 tr:nth-child(1) th:nth-child(4), .ot-0011 tr td:nth-child(5),
+.ot-0011 tr:not(:nth-child(1)) th:nth-child(3), .ot-0011 tr:not(:nth-child(1)) th:nth-child(5) {
   border-right: 1px solid #aaa;
 }
