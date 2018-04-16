@@ -6,47 +6,48 @@
     <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
     <link rel = "shortcut icon" href = "media/favicon.png" />
     <title>mhracalaka</title>
+    <script type = "text/javascript">
+    digits = ["naught", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+    ordinals = ["naughth", "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth"];
+    months = ["afteryule", "cake", "retha", "easter", "threemilk", "midsummer", "afterlitha", "grass", "harvest", "winter", "blood", "yuletide"];
+
+    function tonight() {
+      date = document.getElementById("date");
+      today = new Date();
+      date.innerHTML = datify(today.getDate()) + " of " + monthify(today.getMonth());
+    }
+
+    function datify(d) {
+      if (d < 10) return ordinals[d % 10];
+      else if (d == 10) {
+        return "tenth";
+      } else if (d < 20) {
+        return "onety-" + ordinals[d % 10];
+      } else if (d == 20) {
+        return "twentieth";
+      } else {
+        return "twenty-" + ordinals[d % 10];
+      }
+    }
+
+    function monthify(m) {
+      return months[m];
+    }
+    </script>
   </head>
   <body>
     <div class = "block">
-      <h3><a href = "index.html"><em>Educate me</em></a>, o awakened <em>&#7749;h&amacr;didirh</em>. Loosen me with awful wrath from <em>mhracalaka</em>s yoke.</h3>
+      <h3><a href = "index.html"><em>mhracalaka.</em></a>
       <p>
-      The craftswright has from us departed.
-      </p>
-    </div>
-
-    <div class = "box">
-      <p>
-      <strong>Listen, Friend!</strong> You may to <em>mhracalaka</em> be new, but surely you have here in <em>manuyialaka</em> for quite some time now been staying.
-      </p>
-      <p>
-      Let us find a way out together, <a href = "#"><strong>yes?</strong></a>
+      To-night is the <span id = "date">to-night</span>.
+      <script type = "text/javascript">tonight();</script>
       </p>
     </div>
 
     <div class = "block">
-      <p>
-      We must into <em>madiagarbha</em> descend, before we can as <em>duaby&amacr;m</em>-master emerge. Come now, for there is to find <strong>siedender Lebenslust</strong>.
-      </p>
-    </div>
-
-    <div class = "block">
+      <em class = "date">27.2.gsd</em> <a href = "salon.html">Preliminary notes on the grammar of rgheez.</a> <small><em>s.l.l.</em></small><br />
       <em class = "date">27.2.gsd</em> <a href = "meadow.html">Meadow where snakes wander.</a> <small><em>s.l.l.</em></small><br />
-      <em class = "date">25.2.gsd</em> <a href = "alcove.html">In the orchard of the red woodpeckers.</a> <small><em>s.l.l.</em></small><br />
       <em class = "date">22.2.gsd</em> <a href = "floss.html">Flossing patterns.</a> <small><em>h.b.a.</em></small><br />
-      <em class = "date">16.2.gsd</em> <a href = "sisyphus.html">Towards a formalism of <em>Le Mythe de Sisyphe</em>.</a> <small><em>g.s.b.</em></small><br />
-      <em class = "date">16.2.gsd</em> <a href = "motif.html">A love-motif.</a> <small><em>g.s.b.</em></small><br />
-      <em class = "date">15.2.gsd</em> <a href = "logic.html">Join of arrogance and humility.</a> <small><em>s.l.l.</em></small><br />
-      <em class = "date">15.2.gsd</em> <a href = "phonorthing.html">The transfiguration summoned to the front.</a> <small><em>p.p.</em></small>
-    </div>
-
-    <div class = "block">
-      <h4 class = "thin">usuz &middot; chain</h4>
-      <ul>
-        <li>The <abbr title = "Sehet, weil ich bin mit Schreck und Grauen gefüllt.">b&aelig;bilim</abbr> of <span class = "ct">meaning</span> and <span class = "ct">denoting</span> did the disciplined one reveal.</li>
-        <li>The p&aelig;thragaud of <span class = "ct">truth</span> and <span class = "ct">contradiction</span> did the interrupted one reveal.</li>
-        <li>The qusqu of <span class = "ct">infinitude</span> and <span class = "ct">return</span> did the scale-flayed one reveal.</li>
-      </ul>
     </div>
 
     <div id = "foot" class = "block">
@@ -54,7 +55,7 @@
       <a href = "references.html">References.</a>
       </p>
       <p>
-      I tell you the truth, the <a href="https://eff.org">Electronic Frontier Foundation</a> fights for your rights in the digital world.
+      Mirad, the <a href="https://eff.org">Electronic Frontier Foundation</a> fights for your rights in the digital world.
       </p>
     </div>
   </body>

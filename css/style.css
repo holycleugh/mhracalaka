@@ -192,6 +192,12 @@ dl.constraints dd::before {
   text-indent: -1em;
 }
 
+.numerals td {
+  font-size: 0.8125em;
+  text-align: left;
+  padding: 0.125em 0.25em;
+}
+
 .orth {
   font-style: italic;
 }
