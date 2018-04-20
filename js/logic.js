@@ -2,7 +2,7 @@ elephant = ["p", "t", "c", "k", "g", "gh", "ṅ", "ṅh", "ñh", "nh", "mh", "m"
 whale = ["i", "a", "u"];
 vulture = ["l", "lh", "yh", "rh", "r", "y"];
 
-loaves = ["&#8857;", "&#8868;", "&perp;", "&#8866;", "&#8872;", "&#8871;", "=", "(", ")", "&not;", "&rarr;", "&and;", "&or;", "&equiv;", "&forall;", "&exist;", "&#9723;", "&#9671;", "R"];
+loaves = ["&#8857;", "&#8868;", "&perp;", "&#8866;", "&#8872;", "&isin;", "=", "(", ")", "&not;", "&rarr;", "&and;", "&or;", "&harr;", "&forall;", "&exist;", "&#9723;", "&#9671;", "R"];
 
 bread = "";
 
@@ -16,7 +16,7 @@ for (var i = 9; i < 18; i++) {
   quran.push(vulture[(2 * i + 1) % vulture.length] + whale[Math.floor(2 * i / 3 + 1) % whale.length]);
 }
 
-bread += "The Boeotians.";
+bread += "From b&oelig;otia.";
 bread += "<br />";
 bread += "<table class = \"ships\">";
 

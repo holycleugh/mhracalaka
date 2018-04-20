@@ -314,6 +314,10 @@ strong.sc {
   line-height: 137.5%;
 }
 
+.phaino {
+  font-style: italic;
+}
+
 .ships th, .ships td {
   height: 1.00em;
   padding: 0.25em;
@@ -335,6 +339,11 @@ strong.sc {
 
 .sullow {
   font-family: charis;
+}
+
+.tall {
+  float: left;
+  width: 9em;
 }
 
 .tam td {
