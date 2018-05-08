@@ -306,6 +306,22 @@ table.pset td {
   border: none;
 }
 
+table.long {
+  width: 125%;
+}
+
+.left * {
+  text-align: left;
+}
+
+.right * {
+  text-align: right;
+}
+
+.small {
+  font-size: 87.5%;
+}
+
 .sc {
   font-variant: small-caps;
 }
