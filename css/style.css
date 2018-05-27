@@ -391,3 +391,13 @@ strong.sc {
 .ot-0011 tr:not(:nth-child(1)) th:nth-child(3), .ot-0011 tr:not(:nth-child(1)) th:nth-child(5) {
   border-right: 1px solid #aaa;
 }
+
+.hebrew {
+  font-size: 125%;
+}
+
+.eop::after {
+  float: right;
+  text-align: right;
+  content: "\25A0";
+}
