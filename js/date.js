@@ -14,8 +14,12 @@ function datify(d) {
     return "onety-" + ordinals[d % 10];
   } else if (d == 20) {
     return "twentieth";
-  } else {
+  } else if (d < 30) {
     return "twenty-" + ordinals[d % 10];
+  } else if (d == 30) {
+    return "thirtieth";
+  } else {
+    return "thirty-" + ordinals[d % 10];
   }
 }
 

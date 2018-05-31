@@ -120,6 +120,37 @@ li::before {
   font-size: 75%;
 }
 
+.ass {
+  font-style: normal;
+  text-align: left;
+}
+
+.ass ol li::before, ul.ass li::before {
+  content: none;
+  display: none;
+}
+
+.ass ol {
+  margin: 0;
+  padding: 0 1em;
+}
+
+.ass td, .ass th {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.ass th, .ass td:first-child {
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.ass td:nth-child(2) {
+  text-align: left;
+  padding: 0 1em 0 0.5em;
+}
+
 .block {
   margin: 1em 0;
 }
@@ -390,14 +421,4 @@ strong.sc {
 .ot-0011 tr:nth-child(1) th:nth-child(2), .ot-0011 tr td:nth-child(3), .ot-0011 tr:nth-child(1) th:nth-child(4), .ot-0011 tr td:nth-child(5),
 .ot-0011 tr:not(:nth-child(1)) th:nth-child(3), .ot-0011 tr:not(:nth-child(1)) th:nth-child(5) {
   border-right: 1px solid #aaa;
-}
-
-.hebrew {
-  font-size: 125%;
-}
-
-.eop::after {
-  float: right;
-  text-align: right;
-  content: "\25A0";
 }
