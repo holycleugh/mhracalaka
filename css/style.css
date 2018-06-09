@@ -43,6 +43,10 @@ a:hover {
   text-decoration: underline;
 }
 
+code {
+  white-space: pre;
+}
+
 pre {
   padding-top: 8px;
   font-family: everson;
@@ -54,6 +58,12 @@ pre {
 
 small {
   font-size: 87.5%;
+}
+
+sup {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
 }
 
 table {
