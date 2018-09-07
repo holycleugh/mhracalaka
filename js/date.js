@@ -1,6 +1,6 @@
 digits = ["naught", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
 ordinals = ["naughth", "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth"];
-months = ["after-yule", "cake-tide", "lith-tide", "easter", "thrice-milk", "mid-summer", "after-litha", "grass-tide", "harvest", "winter", "blood-tide", "yule-tide"];
+months = ["after", "cake", "spring", "easter", "milk", "summer", "litha", "grass", "harvest", "winter", "blood", "yule"];
 
 date = document.getElementById("date");
 today = new Date();
