@@ -58,12 +58,7 @@
     </div>
     <script type = "text/javascript">
       var warble = document.getElementById("warble");
-
-      for (var i = 0; i < 1000; i++) {
-        warble.innerHTML += "Echo!"
-        if (i % 10 == 9) warble.innerHTML += "<br />";
-        else warble.innerHTML += " ";
-      }
+      warble.innerHTML += Array(100).fill(Array(10).fill("Echo!").join(" ")).join("<br />")
     </script>
   </body>
 </html>
