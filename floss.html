@@ -5,39 +5,83 @@
     <meta name = "viewport" content = "width = device-width, initial-scale = 1" />
     <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
     <link rel = "shortcut icon" href = "media/favicon.png" />
-    <title>Flossing patterns.</title>
+    <title>Telling flasks and reckoning threads.</title>
+    <style>
+      .floss th:nth-child(2), .floss td:nth-child(2) {
+        border-right: 3px double black;
+      }
+
+      .floss th:nth-child(3), .floss td:nth-child(3) {
+        border-left: none;
+      }
+    </style>
   </head>
   <body>
     <div class = "block">
-      <h3>Flossing patterns.</h3>
-      <p>
-      On 2 July 2017, I began to use a 200-yard spool of <span class = "ct">dental floss</span>. I used it nightly until 7 April 2018, when I came down to the final 0.5 inches. I have organised below some statistics for my viewing pleasure.
-      </p>
+      <h3>Telling flasks and reckoning threads.</h3>
+      <br />
+			<p>
+			The eastern sparkling waters, which I have known;
       <ul>
-        <li>Days flossed: 280 days</li>
-        <li>Average daily string use: 25.714 inches</li>
-        <li>Cost of floss per day*: $0.014</li>
+        <li><strong>Jermuk</strong> of Armenia,</li>
+        <li><strong>Sevan</strong> of Armenia,</li>
+        <li><strong>Borjomi</strong> of Georgia,</li>
+        <li><strong>Radenska</strong> of Slovenia;</li>
       </ul>
+			</p>
+			<p>
+			The western sparkling waters, which I have known;
+      <ul>
+        <li><strong>Perrier</strong> of France,</li>
+        <li><strong>Gerolsteiner</strong> of Germany,</li>
+        <li><strong>S.Pellegrino</strong> of Italy,</li>
+        <li><strong>Voss</strong> of Norway,</li>
+        <li><strong>Schweppes</strong> of Switzerland;</li>
+      </ul>
+			</p>
+			<p>
+			The overwestern sparkling waters, which I have known;
+      <ul>
+        <li><strong>Kirkland Signature</strong> of America,</li>
+        <li><strong>LaCroix</strong> of America,</li>
+        <li><strong>Smartwater</strong> of America,</li>
+        <li><strong>Dasani</strong> of America,</li>
+        <li><strong>Talking Rain</strong> of America,</li>
+        <li><strong>Mineragua</strong> of Mexico;</li>
+      </ul>
+			</p>
       <p>
-      Then we can conclude that I have made my use of <span class = "ct">dental floss</span> more economical.
+        And nothing else.
       </p>
       <hr />
       <p>
-      On 17 November 2016, I purchased a 200-metre spool of <span class = "ct">dental floss</span> for $3.92 (before sales tax). I used it nightly until 1 July 2017, when I came down to the final 6.5 inches. I have organised below some statistics for my viewing pleasure.
+        This is the scroll of how I floss, this is the scroll of how I spend.
       </p>
-      <ul>
-        <li>Cost of floss per day<sup>&dagger;</sup>: $0.0173</li>
-        <li>Length of floss prescribed by dentist: 45.72 cm (18.00 in)</li>
-        <li>Days flossed, with the 6.5-inch outlier: 226</li>
-        <li>Average length of floss per day: 88.50 cm (34.84 in)</li>
-        <li>Days flossed, without the 6.5-inch outlier: 225</li>
-        <li>Average length of floss per day: 88.82 cm (34.97 in)</li>
-      </ul>
-      <hr />
+      <table class = "floss">
+        <tr>
+          <th>Start</th><th>End</th><th>Spool</th><th>Worth</th><th>Lifespan</th><th>Mean thread</th><th>Outlier</th>
+        </tr>
+        <tr>
+          <td>31 Spr. 2019</td><td></td><td><abbr title = "100 yd">91.44 m</abbr></td><td>$0.00*</td><td id = "days"></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>8 Eas. 2018</td><td>30 Spr. 2019</td><td><abbr title = "200 yd">182.88 m</abbr></td><td>$3.92</td><td>357 days</td><td><abbr title = "20.168 in">51.23 cm</abbr></td><td>yes</td>
+        </tr>
+        <tr>
+          <td>2 Li&thorn;. 2017</td><td>7 Eas. 2018</td><td><abbr title = "200 yd">182.88 m</abbr></td><td>$3.92</td><td>280 days</td><td><abbr title = "25.714 in">65.32 cm</abbr></td><td><abbr title = "0.5 in">1.27 cm</abbr></td>
+        </tr>
+        <tr>
+          <td>17 Bld. 2016</td><td>1 Li&thorn;. 2017</td><td><abbr title = "218.723 yd">200 m</abbr></td><td>$3.92</td><td>226 days</td><td><abbr title = "34.84 in">88.50 cm</abbr></td><td><abbr title = "6.5 in">16.51 cm</abbr></td>
+        </tr>
+      </table>
       <p>
-      <span style = "font-size: 0.75em;">*Mirad, I have made the assumption that the cost of floss is constant across time.</span><br />
-      <span style = "font-size: 0.75em;"><sup>&dagger;</sup>Mirad, I have assumed no sales tax and a flat cost per day independent of string length.</span>
+      <span style = "font-size: 0.75em;">*Mirad, this spool was a gift.</span><br />
       </p>
     </div>
+    <script type = "text/javascript">
+      start = new Date(2019, 2, 31);
+      today = new Date();
+      document.getElementById("days").innerHTML = Math.floor((today - start) / (1000 * 60 * 60 * 24)) + "+ days";
+    </script>
   </body>
 </html>
