@@ -165,7 +165,7 @@ th, td {
   border: 1px solid black;
 }
 
-time {
+.day {
   text-align: right;
   display: inline-block;
   width: 5em;
