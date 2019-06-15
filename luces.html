@@ -3,19 +3,8 @@
   <head>
     <meta charset = "utf-8" />
     <meta name = "viewport" content = "width = device-width, initial-scale = 1" />
-    <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
-    <link rel = "shortcut icon" href = "media/favicon.png" />
     <title>The croppish motespread.</title>
     <style>
-      th {
-        font-weight: normal;
-        font-size: 16pt;
-      }
-
-      td.tbd {
-        background: mistyrose;
-      }
-
       td.lgap {
         border-left: 3px solid black;
       }
@@ -27,18 +16,15 @@
       th.no-lines, td.no-lines {
         border: none;
       }
-
-      td.half-height {
-        font-size: 6pt;
-      }
     </style>
   </head>
   <body>
-    <script src = "three/three.min.js"></script>
-    <div class = "block">
-      <h3>The croppish motespread.</h3>
+    <header>
+      <h1>The croppish motespread.</h1>
+    </header>
+    <main>
       <br />
-      <table>
+      <table class = "larger">
         <tr>
           <th>基</th><th>土</th><th>甲</th><th>乙</th><th>丙</th><th>丁</th><th>戊</th><th>己</th><th>庚</th><th>辛</th><th>壬</th><th>癸</th><th>念</th><th>桌</th><th>死</th><th>砿</th><th>塩</th><th>貴</th>
         </tr>
@@ -79,9 +65,12 @@
           <td colspan = "2" class = "no-lines"></td><td class = "lgap">雷</td><td>先</td><td>天</td><td>海</td><td>冥</td><td>美</td><td>婚</td><td>樺</td><td>見</td><td>特</td><td>炉</td><td>表</td><td>賞</td><td>周</td><td colspan = "2" class = "no-lines"></td>
         </tr>
       </table>
-      <p>
+      <p class = "unjust">
       The righteous Shape of the Mote, being threefold of Name (the Token), Crop (of the Eighteen), and Standing（固、液、気） or Malmhood（是金、半金、非金）, is given so, with the short Shape of the same Mote having the Crop bedropped.
       </p>
-      </div>
+    </main>
+    <footer>
+    </footer>
+    <script src = "js/init.js"></script>
   </body>
 </html>

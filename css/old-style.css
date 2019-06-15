@@ -1,0 +1,434 @@
+@font-face {
+  font-family: charis;
+  src: url(../media/charis.ttf);
+}
+
+@font-face {
+  font-family: everson;
+  src: url(../media/everson-bold.ttf);
+}
+
+@font-face {
+  font-family: gentium;
+  src: url(../media/gentium.ttf);
+}
+
+@font-face {
+  font-family: gentium;
+  src: url(../media/gentium-italic.ttf);
+  font-style: italic;
+}
+
+body {
+  max-width: 72ch;
+  margin: 50px;
+  margin-bottom: 125px;
+  background: #fafafa;
+  font: 16px gentium;
+  color: #222;
+  line-height: 112.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #4b4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  white-space: pre;
+}
+
+pre {
+  padding-top: 8px;
+  font-family: everson;
+  font-size: 75%;
+  white-space: pre;
+  line-height: 75%;
+  border-left: 1px solid black;
+}
+
+small {
+  font-size: 87.5%;
+}
+
+sup {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+table {
+  display: inline-block;
+  vertical-align: middle;
+  border-collapse: collapse;
+  margin: 2px;
+  color: #333;
+}
+
+th, td {
+  min-width: 32px;
+  height: 1.50em;
+  padding: 0.25em;
+  border: 1px solid black;
+  text-align: center;
+}
+
+dl {
+  font-size: 81.25%;
+  padding: 0.0625em;
+}
+
+dt, dd {
+  margin: 0;
+}
+
+dt {
+  float: left;
+  min-width: 3em;
+  font-family: everson;
+  margin-top: 0.15625em;
+  margin-left: 0.15625em;
+}
+
+dd {
+  padding-bottom: 0.1875em;
+}
+
+dd::before {
+  content: ":";
+  margin-left: 0.1875em;
+  margin-right: 0.5em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0.25em 0.75em;
+  padding: 0;
+  font-size: 81.25%;
+}
+
+li::before {
+  content: "\00b7";
+  position: relative;
+  font-size: 32px;
+  top: 6px;
+  margin-right: 0.125em;
+  line-height: 0;
+}
+
+#foot {
+  margin-top: 4em;
+  font-size: 75%;
+}
+
+.ass {
+  font-style: normal;
+  text-align: left;
+}
+
+.ass ol li::before, ul.ass li::before {
+  content: none;
+  display: none;
+}
+
+.ass ol {
+  margin: 0;
+  padding: 0 1em;
+}
+
+.ass td, .ass th {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.ass th, .ass td:first-child {
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.ass td:nth-child(2) {
+  text-align: left;
+  padding: 0 1em 0 0.5em;
+}
+
+.block {
+  margin: 1em 0;
+}
+
+.box {
+  width: 87.5%;
+  padding: 15px;
+  border: 1px #aaa solid;
+  background: #efefef;
+  font-size: 87.5%;
+  margin-left: 0.5em;
+}
+
+.box p:first-child {
+  margin-top: 0;
+}
+
+.box p:last-child {
+  margin-bottom: 0;
+}
+
+.big td {
+  min-width: 64px;
+  height: 2.25em;
+}
+
+.khoa {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.compact td {
+  padding: 0;
+}
+
+dl.constraints dt {
+  font-family: gentium;
+  font-weight: bold;
+  font-variant: small-caps;
+  width: 12.5%;
+}
+
+dl.constraints dd {
+  width: 87.5%;
+}
+
+dl.constraints dt, dl.constraints dt {
+  display: block;
+  float: left;
+}
+
+dl.constraints dd::before {
+  content: "";
+}
+
+.ct {
+  font-variant: small-caps;
+  text-decoration: underline;
+}
+
+.date {
+  display: inline-block;
+  min-width: 7ch; /* You foul devil, you! */
+  font-size: 87.5%;
+  text-align: right;
+}
+
+.hanging {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.numerals td {
+  font-size: 0.8125em;
+  text-align: left;
+  padding: 0.125em 0.25em;
+}
+
+.orth {
+  font-style: italic;
+}
+
+table.ot {
+  background: #fcfcfc;
+  border: 2px groove grey;
+}
+
+table.ot td {
+  padding: 0;
+  padding-left: 0.5em;
+  font-family: everson;
+  text-align: left;
+}
+
+table.ot tr:not(:nth-child(1)) th {
+  font-size: 0.875em;
+  font-weight: normal;
+  text-align: right;
+  padding-right: 8px;
+}
+
+table.ot th.candidate::before {
+  font-size: 24px;
+  content: "\261e  ";
+  line-height: 0;
+  vertical-align: sub;
+  padding-right: 0.1875em;
+}
+
+table.ot tr:nth-child(1) th {
+  width: 5em;
+  padding: 0 0.5em;
+  font-size: 0.875em;
+  text-align: left;
+  font-variant: small-caps;
+  border-bottom: 2px solid black;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1) {
+  width: 6em;
+  font-weight: normal;
+  text-align: center;
+  font-family: charis;
+  font-variant: normal;
+  font-size: 18px;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1) em {
+  font-style: normal;
+  display: inline;
+  color: black;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1) strong {
+  font-weight: normal;
+  font-size: 0.875em;
+  display: none;
+  color: grey;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1) strong::before, table.ot tr:nth-child(1) th:nth-child(1) strong::after {
+  content: "\2014";
+  padding: 0 0.25em;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1):hover em {
+  display: none;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1):hover strong {
+  display: inline;
+}
+
+table.ot tr:not(:nth-child(1)) th:nth-child(1) {
+  border-right: none;
+}
+
+table.ot tr:not(:nth-child(1)) th:nth-child(2) {
+  border-left: none;
+}
+
+table.ot tr:not(:nth-child(1)) th:not(:nth-child(1)):not(:nth-child(2)) {
+  background: lightgrey;
+}
+
+table.ot tr:not(:nth-child(1)) th:nth-child(2), table.ot tr:nth-child(1) th:nth-child(1) {
+  border-right: 4px double black;
+  font-family: charis;
+}
+
+table.ot th em {
+  color: grey;
+  font-size: 92.5%;
+}
+
+table.pset {
+  text-align: left;
+  width: 40em;
+}
+
+table.pset td {
+  text-align: left;
+  width: 15em;
+  border: none;
+}
+
+table.long {
+  width: 125%;
+}
+
+.left * {
+  text-align: left;
+}
+
+.right * {
+  text-align: right;
+}
+
+.small {
+  font-size: 87.5%;
+}
+
+.sc {
+  font-variant: small-caps;
+}
+
+strong.sc {
+  line-height: 137.5%;
+}
+
+.phaino {
+  font-style: italic;
+}
+
+.ships th, .ships td {
+  height: 1.00em;
+  padding: 0.25em;
+}
+
+.ships td:first-child {
+  font-weight: bold;
+}
+
+.ships td:nth-child(2) {
+  font-style: italic;
+}
+
+.ships td:last-child {
+  font: 24px everson;
+  padding: 2px;
+  line-height: 0;
+}
+
+.sullow {
+  font-family: charis;
+}
+
+.tall {
+  float: left;
+  width: 9em;
+}
+
+.tam td {
+  padding: 0.0625em 0.25em;
+}
+
+.tam td:nth-child(1), .tam td:nth-child(3) {
+  text-align: left;
+  font-variant: small-caps;
+}
+
+.tam td:nth-child(2), .tam td:nth-child(4) {
+  font-family: everson;
+}
+
+.thin {
+  word-spacing: -0.125em;
+}
+
+.phones-rgh th {
+  font-size: 0.75em;
+}
+
+.ot-001 tr:nth-child(1) th:nth-child(2), .ot-001 tr td:nth-child(3) {
+  border-right: 1px solid #aaa;
+}
+
+.ot-0011 tr:nth-child(1) th:nth-child(2), .ot-0011 tr td:nth-child(3), .ot-0011 tr:nth-child(1) th:nth-child(4), .ot-0011 tr td:nth-child(5),
+.ot-0011 tr:not(:nth-child(1)) th:nth-child(3), .ot-0011 tr:not(:nth-child(1)) th:nth-child(5) {
+  border-right: 1px solid #aaa;
+}
