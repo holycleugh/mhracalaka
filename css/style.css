@@ -36,7 +36,6 @@ body {
   max-width: 48em;
   margin: 2em auto;
   padding: 1em;
-  text-align: justify;
 }
 
 main {
@@ -75,8 +74,8 @@ a:hover {
   white-space: nowrap;
 }
 
-.unjust {
-  text-align: left;
+.justify {
+  text-align: justify;
 }
 
 .small {
