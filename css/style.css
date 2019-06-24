@@ -102,6 +102,19 @@ a:hover {
   text-align: right;
 }
 
+.flexbox {
+  display: flex;
+}
+
+ul.flexbox {
+  padding: 0;
+}
+
+ul.flexbox li {
+  margin: auto;
+  list-style-type: none;
+}
+
 .lfloat {
   float: left;
 }
@@ -122,6 +135,11 @@ a:hover {
 .poem, .hanging {
   padding-left: 1em;
   text-indent: -1em;
+}
+
+.feat em {
+  font-style: normal;
+  font-variant: small-caps;
 }
 
 .poem p:first-child:first-letter {
