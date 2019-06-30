@@ -332,20 +332,37 @@ table.ot th em {
   margin-left: 1em;
 }
 
-.bemarking::before {
+.bemark::before, .betoken::before, .truth::before,
+.setting::before, .foreset::before, .witness::before, .follow::before {
   margin-left: -1em;
   font-weight: bold;
+}
+
+.bemark::before {
   content: "Bemarking.";
 }
 
+.betoken::before {
+  content: "Betokening.";
+}
+
 .setting::before {
-  margin-left: -1em;
-  font-weight: bold;
+  content: "Setting.";
+}
+
+.foreset::before {
+  content: "Foreset.";
+}
+
+.truth::before {
+  content: "Truth.";
+}
+
+.follow::before {
+  content: "Following.";
 }
 
 .witness::before {
-  margin-left: -1em;
-  font-weight: bold;
   content: "Witness.";
 }
 
@@ -355,10 +372,4 @@ table.ot th em {
   font-style: italic;
   font-size: smaller;
   content: "and it is fulfilled.";
-}
-
-.following::before {
-  margin-left: -1em;
-  font-weight: bold;
-  content: "Following.";
 }
