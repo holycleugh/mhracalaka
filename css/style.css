@@ -78,6 +78,14 @@ a:hover {
   text-align: justify;
 }
 
+.sc {
+  font-variant: small-caps;
+}
+
+.no-height {
+  line-height: 0;
+}
+
 .small {
   font-size: small;
 }
@@ -102,6 +110,10 @@ a:hover {
   text-align: right;
 }
 
+.unbold {
+  font-weight: normal;
+}
+
 .flexbox {
   display: flex;
 }
@@ -121,6 +133,15 @@ ul.flexbox li {
 
 .rfloat {
   float: right;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .block {
