@@ -353,7 +353,7 @@ table.ot th em {
   margin-left: 1em;
 }
 
-.bemark::before, .betoken::before, .truth::before,
+.bemark::before, .betoken::before, .truth::before, .callback::before,
 .setting::before, .foreset::before, .witness::before, .follow::before {
   margin-left: -1em;
   font-weight: bold;
@@ -365,6 +365,10 @@ table.ot th em {
 
 .betoken::before {
   content: "Betokening.";
+}
+
+.callback::before {
+  content: "Callback.";
 }
 
 .setting::before {
