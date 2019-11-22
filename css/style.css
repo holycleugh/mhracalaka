@@ -118,13 +118,13 @@ a:hover {
   display: flex;
 }
 
-ul.flexbox {
+ul.flexbox li {
   padding: 0;
+  list-style-type: none;
 }
 
 ul.flexbox li {
   margin: auto;
-  list-style-type: none;
 }
 
 .lfloat {
@@ -173,8 +173,13 @@ ul, ol, dl {
   padding-left: 1em;
 }
 
+/* Why can't I tag <ul> instead of <li>? */
 ul li {
   list-style-type: disc;
+}
+
+ul.none li {
+  list-style-type: none;
 }
 
 ol li {

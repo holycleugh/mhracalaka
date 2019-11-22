@@ -5,7 +5,7 @@ var HEADWORD = "" +
 
 var FOOTERWORD = "" +
 "      <p>" +
-"      Look, the <a href=\"https://eff.org\">Electronic Frontier Foundation</a> fights for your rights in the almeric world." +
+"      Look, the <a href=\"https://eff.org\">Electronic Frontier Foundation</a> fights for your rights in the world of evil ghosts." +
 "      </p>" +
 "      <p>" +
 "      <a href = \"index.html\">Home.</a> <a href = \"moontell.html\">Cetsin.</a> <a href = \"references.html\">References.</a>" +
