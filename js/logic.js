@@ -8,12 +8,8 @@ bread = "";
 
 quran = [];
 
-for (var i = 0; i < 9; i++) {
-  quran.push(vulture[(2 * i) % vulture.length] + whale[Math.floor(2 * i / 3) % whale.length]);
-}
-
-for (var i = 9; i < 18; i++) {
-  quran.push(vulture[(2 * i + 1) % vulture.length] + whale[Math.floor(2 * i / 3 + 1) % whale.length]);
+for (var i = 0; i < 18; i++) {
+  quran.push(vulture[(2 * i + Math.trunc(i / 9)) % vulture.length] + whale[Math.floor(2 * i / 3) % whale.length]);
 }
 
 bread += "From b&oelig;otia.";
